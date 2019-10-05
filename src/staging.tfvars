@@ -9,6 +9,7 @@ dedicated_master_count               = 3
 dedicated_master_type                = "m5.large.elasticsearch"
 data_instance_type                   = "m5.large.elasticsearch"
 data_instance_count                  = 3
+ebs_volume_size                      = 60
 iam_actions                          = ["es:ESHttpGet", "es:ESHttpPut", "es:ESHttpPost"]
 encrypt_at_rest_enabled              = true
 encrypt_at_rest_kms_key_id           = "arn-for-your-dedicated-kms-key-id"

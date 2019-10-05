@@ -30,7 +30,7 @@ module "elasticsearch" {
   kibana_subdomain_name               = var.kibana_subdomain_name
   tags                                = var.tag_map
   create_iam_service_linked_role      = false
-  ebs_volume_size                     = 10
+  ebs_volume_size                     = var.ebs_volume_size
   custom_access_policies              = templatefile("${path.module}/templates/domain-all-access-policy.json", { region = var.region, account_id = data.aws_caller_identity.current.account_id, namespace = var.namespace, stage = var.stage, name = var.name })
 
   advanced_options = {

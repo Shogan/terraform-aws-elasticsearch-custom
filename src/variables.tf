@@ -119,6 +119,12 @@ variable "kibana_subdomain_name" {
     description = "The name of the subdomain for Kibana in the DNS zone (e.g. kibana, ui, ui-es, search-ui, kibana.elasticsearch)"
 }
 
+variable "ebs_volume_size" {
+    type        = number
+    default     = 10
+    description = "The size of the EBS volumes to use for nodes"
+}
+
 variable "tag_map" {
     type    = map(string)
     default = {"Terraformed" = "true"}
