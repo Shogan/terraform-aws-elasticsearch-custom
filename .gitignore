@@ -1,0 +1,5 @@
+src/.terraform/*
+*.tfplan
+src/terraform.tfstate
+src/terraform.tfstate.backup
+local-dev.tfvars
