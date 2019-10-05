@@ -4,6 +4,8 @@ An example of a managed Elasticsearch cluster running in AWS, leveraging the exc
 
 The module source for this repository is a forked version of the CloudPosse official Terraform [module](https://github.com/cloudposse/terraform-aws-elasticsearch) for AWS ElasticSearch.
 
+You can find the customised module source [here](https://github.com/Shogan/terraform-aws-elasticsearch)
+
 This particular [implementation](https://github.com/cloudposse/terraform-aws-elasticsearch) has some tweaks made to prevent the original modules' security group creation from happening. This is done in particular for AWS accounts where Security Group creation/edit and/or IAM create/edit permissions have been revoked or are handled by other siloed teams.
 
 Effectively, this Terraform AWS ElasticSearch implementation will do most of what the CloudPosse one does, but it adds variables, and defines optionals for:

@@ -1,5 +1,6 @@
 vpc_id                               = "vpc-your-vpc-id"
 stage                                = "dev"
+namespace                            = "eg"
 existing_security_groups_for_access  = ["an-existing-sg-id-1", "an-existing-sg-id-2"]
 subnet_ids                           = ["subnet-id-1", "subnet-id-2"]
 zone_awareness_enabled               = true
